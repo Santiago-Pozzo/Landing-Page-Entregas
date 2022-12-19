@@ -1,0 +1,51 @@
+@import  url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap'); 
+
+.navbar{
+    min-width: 150px;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 3px solid;
+    border-color: #650d88;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box-logo{
+    background-image:url(./Logo.png);
+    background-position: center;
+    background-size: cover;
+    height: 150px;
+    width: 150px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.box-botones{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3px;
+    gap: 5px;
+    align-content: space-around;
+    align-items: center;
+}
+
+.boton-nav{
+    background-color:#e78300b0;
+    height: 25px;
+    border: 1px solid;
+    border-radius: 5px;
+    border-color: #650d88;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.texto-boton{
+    font-family: Audiowide;
+    color: #650d88;
+    font-weight:500;
+}
