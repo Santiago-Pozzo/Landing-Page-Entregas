@@ -1,7 +1,7 @@
 @import  url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap'); 
 
 .navbar{
-    min-width: 150px;
+    min-width: 120px;
     border-radius: 5px;
     display: flex;
     flex-wrap: wrap;
@@ -16,8 +16,8 @@
     background-image:url(./Logo.png);
     background-position: center;
     background-size: cover;
-    height: 150px;
-    width: 150px;
+    height: 100px;
+    width: 100px;
     border-radius: 5px;
     display: flex;
     align-items: center;
@@ -25,16 +25,24 @@
 
 .box-botones{
     display: flex;
-    flex-wrap: wrap;
-    padding: 3px;
-    gap: 5px;
-    align-content: space-around;
+    padding: 0px;
     align-items: center;
 }
 
+.lista-botones{
+   list-style-type: none;
+   display: flex;
+   flex-wrap: wrap;
+   padding: 3px;
+   gap: 5px;
+   align-content: space-around;
+   align-items: center;
+}
+
+
 .boton-nav{
     background-color:#e78300b0;
-    height: 25px;
+    height: 15px;
     border: 1px solid;
     border-radius: 5px;
     border-color: #650d88;
@@ -46,6 +54,7 @@
 
 .texto-boton{
     font-family: Audiowide;
+    font-size: 9px;
     color: #650d88;
     font-weight:500;
 }
