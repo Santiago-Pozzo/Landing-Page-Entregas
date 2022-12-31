@@ -50,7 +50,7 @@ header {
 
 
 .boton-nav {
-    background-color:#e78300b0;
+    background:#e783009d;
     border: 1px solid;
     border-radius: 5px;
     border-color: #650d88;
@@ -102,6 +102,10 @@ main {
     font-family: farro;
     font-size: 40px;
     font-weight: 600;
+    background: linear-gradient(to left, #650d88, #c43ad6);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
 }
 
 .info-portada p {
@@ -122,12 +126,12 @@ main {
 }
 
 .btn-portada {
-    background-color:#e78300b0;
+    background:#e78300b0;
     border: 2px solid;
     border-radius: 20px;
     border-color: #650d88;
     padding: 15px;
-    font-family: Audiowide;
+    font-family: farro;
     font-size: 18px;
     color: #650d88;
     font-weight:600;
