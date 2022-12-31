@@ -1,26 +1,44 @@
-
+/* FUENTES */
 @import  url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap'); 
 
-header{
-    min-width: 120px;
+@import url('https://fonts.googleapis.com/css2?family=Farro:wght@300;400;500;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+    font-family: "Poppins"; 
+    /* El text-decoration:none, hace que de entrada no haya nada subrayado (estyo sirve para los anchors que vienen subrayados) */
+    text-decoration: none;
+    list-style-type: none;
+  }
+
+/* HEADER */
+header {
+    width: 100%;
     border-radius: 5px;
     display: flex;
     flex-wrap: wrap;
-    border: 3px solid;
+    /* border: 3px solid; */
+    background: white;
     border-color: #650d88;
     padding: 10px;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 2;
 }
 
 
-.logo{
-    height: 100px;
+.logo {
+    height: 90px;
     border-radius: 5px;
 }
 
 
-.lista-botones{
+.lista-botones {
    list-style-type: none;
    display: flex;
    flex-wrap: wrap;
@@ -31,9 +49,8 @@ header{
 }
 
 
-.boton-nav{
+.boton-nav {
     background-color:#e78300b0;
-    height: 15px;
     border: 1px solid;
     border-radius: 5px;
     border-color: #650d88;
@@ -43,9 +60,94 @@ header{
     padding: 5px;
 }
 
-.boton-nav p{
-    font-family: Audiowide;
-    font-size: 9px;
+.boton-nav p {
+    font-family: farro;
+    font-size: 12px;
     color: #650d88;
     font-weight:500;
+}
+
+main {
+    margin-top: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to bottom, white, #e78300b0)
+}
+
+/* PORTADA */
+#portada {
+    margin: 0 80px;
+    margin-bottom: 0;
+    width: 80%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50px;
+    /* background: #b385bb80; */
+    border-radius: 25px;
+}
+
+.info-portada {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+    gap: 25px;
+}
+
+.info-portada h2 {
+    font-family: farro;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.info-portada p {
+    font-family: farro;
+    font-size: 16px;
+    font-weight: 200;
+}
+
+#portada img {
+    height: 300px;
+    border-radius: 15px;
+    margin: 50px;
+}
+
+.box-btn-portada {
+    display: flex;
+    gap: 10px;    
+}
+
+.btn-portada {
+    background-color:#e78300b0;
+    border: 2px solid;
+    border-radius: 20px;
+    border-color: #650d88;
+    padding: 15px;
+    font-family: Audiowide;
+    font-size: 18px;
+    color: #650d88;
+    font-weight:600;
+}
+
+
+/* INFO */
+#info {
+    width: 80%;
+    max-width: 1200px;
+    margin: 50px;
+    margin-bottom: 100px;
+    padding: 20px;
+    text-align: center;
+    /* background: #b385bb80; */
+    border-radius: 25px;
+}
+
+#info p {
+    font-family: farro;
+    font-size: 16px;
+    font-weight: 200;
 }
