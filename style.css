@@ -58,14 +58,26 @@ header {
     align-content: center;
     align-items: center;
     padding: 5px;
+    cursor: pointer;
 }
+
 
 .boton-nav p {
     font-family: farro;
     font-size: 12px;
     color: #650d88;
     font-weight:500;
+    transition-property: all;
+    transition-duration: 0.2s;
 }
+
+.boton-nav p:hover {
+    font-size: 15px;
+    font-weight:500;
+    transition-property: all;
+    transition-duration: 0.2s;
+}
+
 
 main {
     margin-top: 150px;
@@ -135,8 +147,43 @@ main {
     font-size: 18px;
     color: #650d88;
     font-weight:600;
+    cursor: pointer;
 }
 
+.vibrante:hover {
+    animation: vibrar 0.3s;
+}
+
+/* .vibrante {
+    animation: vibrar 0.5s;
+} */
+
+@keyframes vibrar {
+    0% {
+        transform: rotate(4deg);
+    }
+    15% {
+        transform: rotate(-4deg);
+    }
+    29% {
+        transform: rotate(4deg);
+    }
+    44% {
+        transform: rotate(-4deg);
+    }
+    58% {
+        transform: rotate(4deg);
+    }
+    73% {
+        transform: rotate(-4deg);
+    }
+    87% {
+        transform: rotate(4deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
 
 /* INFO */
 #info {
@@ -174,13 +221,26 @@ main {
 
 .cards-encabezado h2 {
     font-family: farro;
-    font-size: 30px;
+    font-size: 35px;
     font-weight: 800;
     background: linear-gradient(to left, #650d88, #c43ad6);
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
     margin-bottom: 1rem;
+    animation: latido 1.5s infinite;
+}
+
+@keyframes latido {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.03);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 .cards-encabezado p {
