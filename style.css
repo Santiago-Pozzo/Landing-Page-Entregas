@@ -73,7 +73,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(to bottom, white, #e78300b0)
+    background: linear-gradient(to bottom, white, #e78300b0, white)
 }
 
 /* PORTADA */
@@ -161,7 +161,6 @@ main {
     width: 80%;
     max-width: 1200px;
     margin: 50px;
-    margin-bottom: 100px;
     display: flex;
     flex-direction: column;
 }
@@ -195,6 +194,7 @@ main {
     justify-content: space-around;
     padding: 30px;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -240,3 +240,81 @@ main {
     font-size: 16px;
     font-weight: 400;
 }
+
+/* CONTACTO */
+#contacto {
+    width: 80%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#contacto iframe {
+    height: 300px;
+    width: 300px;
+    border-radius: 1rem;
+}
+
+.info-contacto {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 20px;
+    text-align: center;
+}
+
+.info-contacto h2 {
+    font-family: farro;
+    font-size: 30px;
+    font-weight: 800;
+    background: linear-gradient(to left, #650d88, #c43ad6);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.tarjeta-contacto {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 5px;
+    justify-content: center;
+    text-align: left;
+}
+
+.medio-contacto {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 5px;
+}
+
+.tarjeta-contacto img {
+    height: 1rem;
+    width: 1rem;
+}
+
+.tarjeta-contacto span {
+    font-family: farro;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: white;
+}
+
+footer image {
+    height: 50px;
+    width: 50px;
+}
+
