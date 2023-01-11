@@ -286,7 +286,7 @@ main {
 
 .card-text h3 {
     font-family: farro;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 800;
     background: linear-gradient(to left, #650d88, #c43ad6);
     color: transparent;
@@ -297,7 +297,7 @@ main {
 
 .card-text p {
     font-family: farro;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 400;
 }
 
